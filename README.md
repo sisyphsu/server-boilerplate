@@ -3,7 +3,7 @@
 
 ## 环境配置 —— Profile
 
-在根目录的`pom.xml`中配置dev、beta、prod环境变量，然后在SpringBoot的配置文件中引用maven的profile属性，即可达成SpringBoot与Maven的profile完美兼容。
+在根目录的`pom.xml`中配置dev、beta、prod环境变量，然后在SpringBoot的配置文件中引用maven的profile属性。
 
 [参考](http://blog.csdn.net/lihe2008125/article/details/50443491) 
 
