@@ -1,0 +1,6 @@
+server:
+  context-path: /
+  port: 9010
+
+logging:
+  path: /tmp/logs

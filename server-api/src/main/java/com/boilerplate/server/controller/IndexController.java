@@ -20,8 +20,9 @@ public class IndexController {
     @RequestMapping("/")
     public Object index() {
         TestExample testExample = new TestExample();
-        testMapper.selectByExampleWithRowbounds(testExample, new RowBounds(1, 1));
-        return testMapper.selectByExample(null);
+        testExample.setLimitStart(1);
+        testExample.setLimitEnd(1);
+        return testMapper.selectByExample(testExample);
     }
 
 }

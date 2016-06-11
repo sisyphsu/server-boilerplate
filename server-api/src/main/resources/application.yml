@@ -1,4 +1,6 @@
 spring:
+  profiles:
+    active: @profileActive@
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/water?useUnicode=true&characterEncoding=UTF-8
     username: water
@@ -7,8 +9,8 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     maxActive: 20
     initialSize: 1
-    maxWait: 60000
     minIdle: 1
+    maxWait: 60000
     timeBetweenEvictionRunsMillis: 60000
     minEvictableIdleTimeMillis: 300000
     validationQuery: select 'x'
@@ -17,6 +19,3 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxOpenPreparedStatements: 20
-
-server:
-  port: 9010
